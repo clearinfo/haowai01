@@ -27,9 +27,8 @@
 								<div class="zmiti-brage">
 									<img :src="imgs.brage" alt="">
 								</div>
-								<div class="zmiti-haowai">
+								<div class="zmiti-haowai" style={{display:none}}>
 									<img :src="imgs.haowai" alt="">
-									<span>-第<label for="">{{periods}}</label>期-</span>
 								</div>
 								<div class="zmiti-news-C">
 									<h1>{{title}}</h1>
