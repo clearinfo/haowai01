@@ -530,7 +530,8 @@ img {
       margin-top: .2rem; }
       .zmiti-index-main-content .zmiti-news-C .zmiti-news div {
         line-height: .7rem;
-        text-indent: 2em; }
+        text-indent: 2em;
+        text-align: justify; }
 
 .zmiti-loading {
   z-index: 1000;
