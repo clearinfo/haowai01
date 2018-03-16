@@ -27,7 +27,7 @@
 								<div class="zmiti-brage">
 									<img :src="imgs.brage" alt="">
 								</div>
-								<div class="zmiti-haowai" style={{display:none}}>
+								<div class="zmiti-haowai">
 									<img :src="imgs.haowai" alt="">
 								</div>
 								<div class="zmiti-news-C">
@@ -58,7 +58,7 @@
 						<section> 
 							<div>
 								<div>我收藏了2018年两会号外</div>
-								<div>第{{periodsUpper[periods-1]}}期NO.{{randomPv}}号</div>
+								<div>NO.{{randomPv}}号</div>
 							</div>
 							<div>
 								<img :src="imgs.qrcode" @touchstart='starts' />
@@ -357,7 +357,7 @@
 								s.$refs['createimgs'].style.WebkitTransform = 'scale('+s.viewH/(s.$refs['createimgs'].offsetHeight*1.2)+')'
 
 								s.$refs['audio'].play();
-							},400);
+							},100);
 
 							zmitiUtil.wxConfig(window.zmitiConfig.shareTitle.replace(/{{totalPv}}/ig, s.totalpv),
 							window.zmitiConfig.shareDesc.replace(/{{periods}}/ig, s.periodsUpper[window.zmitiConfig.periods - 1]).replace(/{{pv}}/ig, s.randomPv));
